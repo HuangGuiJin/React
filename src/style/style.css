@@ -1,0 +1,2333 @@
+@charset "utf-8"; /* CSS Document */
+
+/*********CSS reset ***********/
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+img,
+a img {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+em,
+i,
+u {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color: #878787;
+}
+a:hover {
+  color: #878787;
+}
+body {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif, "SimSun";
+  background: #e6e6e6;
+  color: #595959;
+  line-height: 22px;
+  height: 100%;
+  width: 100%;
+}
+
+/* 头部 */
+/*header*/
+.logo {
+  width: 264px;
+  height: 80px;
+  float: left;
+}
+.logo a {
+  display: block;
+  width: 264px;
+  height: 80px;
+}
+.logo a img {
+  display: inline-block;
+  width: 264px;
+  height: 80px;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/logo.gif)
+    no-repeat left top;
+}
+.header {
+  width: 1200px;
+  height: 80px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: #fff;
+}
+.header_right {
+  width: 570px;
+  height: 80px;
+  float: right;
+}
+.header_right_1 {
+  float: left;
+  padding-top: 32px;
+}
+.header_right_1 ul li {
+  height: 17px;
+  line-height: 17px;
+  padding-left: 11px;
+  padding-right: 11px;
+  border-right: 1px dotted #878787;
+  float: left;
+}
+.header_right_1 ul li.border_none {
+  border: none;
+}
+.header_right_1 ul {
+  overflow: hidden;
+  width: 122px;
+  float: left;
+  padding-right: 12px;
+}
+.home_icon a {
+  display: block;
+  width: 12px;
+  height: 11px;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/header_home_menu.gif) no-repeat;
+  margin-top: 2.5px;
+}
+.tel_icon {
+  width: 41px;
+  height: 17px;
+  line-height: 17px;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/header_tel_menu.gif) no-repeat
+    0px 4px;
+  float: left;
+  padding-left: 18px;
+  font-size: 14px;
+}
+.search01 {
+  width: 155px;
+  height: 24px;
+  line-height: 21px;
+  border: 1px solid #c8c8c8;
+  margin-left: 20px;
+}
+.header_right_2 {
+  float: left;
+  padding-top: 29px;
+  padding-left: 10px;
+  width: 157px;
+  height: 23px;
+  padding-right: 25px;
+}
+.header_right_2 .search_button {
+  width: 21px;
+  height: 21px;
+  border: none;
+  background: #fff;
+  float: right;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/Search_botton.gif); */
+  cursor: pointer;
+}
+.header_right_2 .search_text {
+  width: 200px;
+  height: 33px;
+  line-height: 21px;
+  border: none;
+  padding-left: 9px;
+  background: #fff;
+  float: left;
+}
+.header_right_3 {
+  width: 155px;
+  height: 44px;
+  padding-top: 18px;
+  float: left;
+  padding-right: 31px;
+  line-height: 44px;
+  margin-left: 95px;
+}
+.header_right_3 a.header_login_menu {
+  display: block;
+  padding-left: 23px;
+  width: 132px;
+  height: 44px;
+  font-size: 14px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/login_button_icon.gif) no-repeat 124px 20px */
+  /* #0072bc; */
+  background: #0072bc;
+  color: #ffff;
+  font-weight: bold;
+}
+.login_two_bg {
+  width: 155px;
+  background: #1253a3;
+  z-index: 1000000;
+  height: auto;
+  border-top: 2px solid #00a261;
+  position: absolute;
+  display: none;
+}
+.login_two_bg ul li a {
+  line-height: 27px;
+  display: block;
+  padding-left: 34px;
+  width: 121px;
+  height: 27px;
+}
+.login_two_bg ul li a:hover {
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/toolbg3.jpg) no-repeat 128px 9px; */
+}
+.login_two_bg ul li {
+  width: 100%;
+  border-bottom: 1px solid #114a9b;
+  border-top: 1px solid #1972c6;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/login_bg_icon.gif) no-repeat 128px 9px; */
+  line-height: 27px;
+}
+.login_two_bg ul li.border_top_none {
+  border: none;
+}
+.copy_left_phone {
+  display: none;
+}
+
+/*nav*/
+.nav {
+  width: 1200px;
+  margin: 0 auto;
+  height: 45px;
+  line-height: 45px;
+  background: #f2f2f2;
+  position: relative;
+  z-index: 998;
+}
+.nav ul {
+  position: relative;
+  height: 45px;
+}
+.nav ul li {
+  line-height: 45px;
+  width: 10%;
+  width: 9.99%;
+  text-align: center;
+  float: left;
+}
+.nav ul li a.nav_a {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  display: block;
+}
+.nav ul li a.nav01 {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  display: block;
+  color: #0055a2;
+  font-family: "兰亭黑简", "微软雅黑";
+}
+.nav ul li:hover a {
+  color: #fff;
+}
+.nav ul li:hover a:hover {
+  color: #fff;
+}
+.nav ul li a.nav_a:hover,
+.nav ul li a.nav_a_se {
+  background: #3a5f81;
+}
+.pad_nav,
+.nav_2,
+.main_pad_menu_bg {
+  display: none;
+}
+.nav_header_bg {
+  width: 100%;
+  height: 300px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/header_nav_yinying.png) repeat-x; */
+}
+
+.nav_2 img.menu_icon_id {
+  display: block;
+}
+.nav_2 img.menu_icon_id_hover {
+  display: none;
+}
+
+.nav_2_current img.menu_icon_id_hover {
+  display: block;
+}
+.nav_2_current img.menu_icon_id {
+  display: none;
+}
+/* 导航浮层 */
+
+.menuWrap {
+  max-width: 1200px;
+  min-width: 980px;
+  overflow: hidden;
+  left: 0;
+  background-color: #3a5f81;
+  z-index: 999;
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+.menu-box1,
+.menu-box2 {
+  float: left;
+  width: 474px;
+  padding-left: 50px;
+}
+.menu-box3 {
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.menuWrap dd {
+  line-height: 2em;
+  display: none;
+}
+.menu-dlist {
+  width: auto;
+  width: auto;
+  margin-left: 1.5em;
+  margin-right: 1.4em;
+  float: left;
+  font-size: 12px;
+  text-align: left;
+}
+.menu-dlist dt {
+  padding-bottom: 0px;
+}
+.menu-dlist h2 {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: hand;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-dlist dd dl {
+  color: #99ccff;
+  float: left;
+}
+.menu-dlist dd dl dd {
+  display: none;
+}
+
+/*框架*/
+.main {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 980px;
+  background: #fff;
+}
+
+/*copy*/
+.copy {
+  height: 40px;
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  line-height: 40px;
+}
+.copy_left {
+  padding-left: 35px;
+  float: left;
+}
+.copy_mid {
+  float: right;
+  width: 394px;
+}
+.copy_mid ul li {
+  float: left;
+  padding: 0 8px;
+  margin: 0px;
+  list-style-type: none;
+  text-align: center;
+}
+.copy_right {
+  float: right;
+  padding-right: 30px;
+  padding-left: 64px;
+}
+.copy_right ul li {
+  float: left;
+  position: relative;
+}
+.copy a,
+.copy {
+  color: #595959;
+}
+.copy_right .copy_hoverbox ul li {
+  padding: 0px;
+}
+.copy_right ul li a {
+  display: block;
+  padding: 2px 6px 4px 5px;
+  cursor: pointer;
+  border: solid 1px #fff;
+  border-top: none;
+}
+.copy_right ul li a.copy_hover {
+  border: solid 1px #afafaf;
+  border-top: none;
+}
+.copy_hoverbox {
+  position: absolute;
+  bottom: 26px;
+  width: 162px;
+  height: 87px;
+  z-index: 1000;
+}
+.copyone {
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/copybg.jpg) no-repeat; */
+  left: 0;
+}
+.copytwo {
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/copybg2.jpg) no-repeat; */
+  left: -32px;
+}
+.copy_hoverbox ul {
+  float: right;
+  width: 76px;
+  margin-right: 1px;
+  margin-top: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+.copy_hoverbox ul li {
+  width: 100%;
+}
+.copy_hoverbox ul li.copy_use {
+  width: 65px;
+  height: 23px;
+  line-height: 23px;
+  background: #fa7822;
+  text-align: center;
+  margin-top: 6px;
+}
+.copy_hoverbox ul li.copy_use a {
+  width: 65px;
+  color: #fff;
+  padding: 0;
+}
+
+/*底部样式*/
+.foot {
+  height: 190px;
+  width: 1200px;
+  margin: 0 auto;
+  background: #545454;
+  overflow: hidden;
+}
+.foot_ul,
+.foot_ulnone {
+  width: 16.65%;
+  float: left;
+  padding: 0px;
+  margin: 18px 0px;
+}
+.foot_ul li a {
+  color: #fff !important;
+}
+.foot_ul {
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/foot_line.gif) no-repeat top right; */
+}
+.foot_ul li,
+.foot_ulnone li {
+  color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+  margin-left: 33%;
+}
+.foot_ulnone a {
+  color: #fff !important;
+}
+.fontbold {
+  font-size: 16px;
+}
+
+/* 内容 */
+.content {
+  width: 1200px;
+  background: #fff;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.content_main {
+  width: 95%;
+  margin: 0 auto;
+}
+.atWrap,
+.atWrapnone {
+  width: 25%;
+  height: 180px;
+  float: left;
+  padding: 0 2.5%;
+  color: #444;
+}
+.atWrap {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/tiao.jpg)
+    no-repeat right center;
+}
+.nomar {
+  margin: 0;
+  background: none;
+}
+.atWrap:last-child {
+  margin-right: 0;
+}
+.atWrap h3,
+.atWrapnone h3 {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  padding-top: 10px;
+}
+.atWrap h3 a,
+.atWrapnone h3 a {
+  color: #2474bb;
+  font-weight: normal;
+}
+.atWrap em,
+.atWrapnone em {
+  font-weight: bold;
+}
+.atCt {
+  padding-top: 5px;
+  height: 80px;
+  line-height: 1.8em;
+}
+.atCt a {
+  color: #444;
+}
+.footer {
+  text-align: right;
+  margin-top: 10px;
+}
+.footer a {
+  color: #4c4c4c;
+}
+.footer a em {
+  color: #00a597;
+  padding-left: 2px;
+}
+.atCt li {
+  float: left;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/pointblack.jpg) no-repeat left 11px; */
+  overflow: hidden;
+}
+.atCt li a {
+  color: #444;
+  padding-left: 8px;
+}
+.atCt ul.onlineList {
+  width: 96px;
+}
+.atCt ul.onlineList56 {
+  width: 56px;
+}
+.serverList li {
+  width: 50%;
+  width: 49%;
+  _width: 89px; /*margin-right:6px;*/
+}
+.left,
+.fl,
+.float_left,
+.lfloat,
+.ms_ileft {
+  float: left;
+  display: inline;
+}
+.fr,
+.mobile_right1_text,
+.float_right,
+.rfloat {
+  float: right;
+  display: inline;
+}
+.news_index li {
+  width: 95px;
+}
+.news_index li.margin_left_25 {
+  margin-left: 25px;
+  width: 57px;
+}
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 360px !important;
+  width: 1200px !important;
+  /* line-height: 160px; */
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: orange;
+}
+.ant-carousel .slick-dots li button {
+  background: orange !important;
+  color: orange !important;
+}
+
+.company_cont_ul {
+  float: left;
+  width: 29%;
+  height: auto;
+  padding: 0px;
+  margin-left: 2%;
+  padding-right: 2%;
+  display: inline-block;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/tiao.jpg)
+    no-repeat right 15px;
+}
+.company_cont_ulwide {
+  float: left;
+  width: 780px;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 2%;
+  padding-right: 2%;
+  display: inline-block;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/tiao.jpg)
+    no-repeat right center;
+}
+.company_contnone {
+  height: 225px;
+  width: 98.7%;
+  padding: 0px;
+  margin: 0 auto;
+}
+.company_contnoneheight {
+  height: 260px;
+  width: 98.7%;
+  padding: 0px;
+  margin: 0 auto;
+}
+.company_contheight {
+  /*height:280px;*/
+  width: 98.7%;
+  padding: 0 0 20px 0;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/line_wide.gif) no-repeat bottom center; */
+}
+.tel-box {
+  height: 37px;
+  width: 303px;
+  position: relative;
+  top: 0;
+  left: 684px;
+}
+.small_image {
+  height: 92px;
+  margin-bottom: 10px;
+  width: 100%;
+  clear: both;
+}
+.smallbank_cont {
+  width: 19%;
+  *width: 18%;
+  height: 100px;
+  float: left;
+  margin-right: 1%;
+}
+.smallbank_cont img {
+  margin-bottom: 10px;
+}
+.searchbutton {
+  width: 47px;
+  height: 24px;
+  line-height: 24px;
+  margin-left: 10px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/search.gif) no-repeat; */
+  color: #fff;
+}
+.input_search {
+  width: 135px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #bfbfbf;
+  color: #999;
+}
+
+.personal_cont_ulnone {
+  float: left;
+  width: 30%;
+  width: 29%;
+  padding: 0px;
+  padding-right: 2%;
+  margin-left: 2%;
+  margin-left: 35px;
+  display: inline-block;
+  display: inline-flex;
+}
+.personal_cont_ulnonetoday {
+  float: left;
+  width: 29.4%;
+  height: 140px;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+.personal_cont_ulnone_foot {
+  float: left;
+  width: 33%;
+  height: 110px;
+  margin-top: 10px;
+  padding: 0px;
+}
+.personal_cont_ulnonewide {
+  float: left;
+  width: 970px;
+  height: 180px;
+  padding: 0px;
+  display: inline-block;
+  margin: 0 40px;
+}
+.company_title,
+.company_title_left {
+  color: #09569f !important;
+  font-size: 18px !important;
+  list-style-type: none;
+  /* margin: 0px; */
+  /* padding: 0px; */
+  line-height: 40px;
+}
+.company_bg,
+.today_bg {
+  background: #e6e6e6;
+  height: auto;
+  font-size: 12px;
+  font-weight: normal;
+  color: #595959;
+}
+
+/*当前位置*/
+.index_personalbox,
+.index_personalbox_boder {
+  width: 1200px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  padding-left: 20px;
+  background: #fff;
+}
+.index_personalbox_boder {
+  border-bottom: 2px solid #ececec;
+}
+.index_personalbox a,
+.index_personalbox_boder a {
+  color: #333;
+  margin: 0 3px;
+}
+.ms_ileft {
+  display: block;
+  float: left;
+}
+
+/*-------------以下是内容区域*/
+.list_con {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+.list_con .title {
+  font-size: 18px;
+  color: #09569f;
+  padding-left: 20px;
+  height: 50px;
+  line-height: 50px;
+  font-family: "兰亭黑简", "微软雅黑";
+}
+.mobile_bank {
+  /* width: 97.43589%; */
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+}
+.mobile_bank ul {
+  width: 100%;
+  height: 68px;
+  margin-bottom: 39px;
+  padding: 15px;
+}
+.mobile_bank ul li {
+  float: left;
+  width: 19.89%;
+  /* width: 16.4%; */
+  height: 68px;
+  background: #f8f8f8;
+  line-height: 68px;
+  cursor: pointer;
+  border: 1px solid #c8c8c8;
+  border-right: none;
+}
+.mobile_bank ul li.noborder {
+  border-right: 1px solid #c8c8c8;
+}
+.mobile_bank ul li p {
+  font-size: 16px;
+  font-family: "兰亭黑简", "微软雅黑";
+  color: #595757;
+}
+.mobile_bank ul li span {
+  margin-left: 18.5%;
+  float: left;
+  width: 32%;
+  height: 45px;
+  margin-top: -2px;
+}
+.mobile_bank_tab_title ul li.sel_tab {
+  background: #fff;
+  border-bottom: none;
+}
+.tab_se_none2 {
+  display: none;
+}
+.mobile_bank_tab_title ul li.sel_tab img.tab_se_none2 {
+  display: block;
+}
+.mobile_bank_tab_title ul li.sel_tab img.tab_se_none1 {
+  display: none;
+}
+.mobile_bank_tab_main {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 39px;
+  padding: 15px;
+}
+.mobile_bank_tog {
+  width: 100%;
+}
+/*.mobile_bank_tog .left{ float:left; position:absolute;left:30px; top:60px; width:20px; height:60px;}
+*/
+.mobile_bank_tog .mobile_bank_tog_down {
+  width: 100%;
+  overflow: hidden;
+}
+.mobile_bank_tog_down .center {
+  overflow: hidden;
+}
+.mobile_bank_tog dl {
+  width: 100%;
+  float: left;
+}
+/*.mobile_bank_tog .right{ float:right; position:absolute;right:60px; top:60px;width:20px; height:60px;}
+*/
+.mobile_bank_tog dl dt {
+  width: 30.9671%;
+  height: 180px;
+  float: left;
+  margin-right: 2.1649%;
+}
+.mobile_bank_tog dl dt a {
+  display: block;
+}
+.mobile_bank_tog dl .dd01 {
+  width: 48%;
+  float: left;
+  position: relative;
+}
+.mobile_bank_tog dl .dd01 div {
+  height: 36px;
+}
+.mobile_bank_tog dl .dd01 div a {
+  font-size: 16px;
+  color: #0055a2;
+  font-family: "兰亭黑简", "微软雅黑";
+}
+.mobile_bank_tog dl .dd01 span {
+  font-size: 12px;
+  line-height: 24px;
+  color: #595757;
+  font-family: "宋体";
+}
+.mobile_bank_tog dl .dd01 p {
+  margin-top: 10px;
+  line-height: 58px;
+  position: absolute;
+  left: 0px;
+  top: 128px;
+}
+.mobile_bank_tog dl .dd01 p a {
+  font-size: 14px;
+  font-family: "兰亭黑简", "微软雅黑";
+  color: #595757;
+}
+.mobile_bank_tog dl .dd01 p span {
+  display: inline-block;
+  width: 5px;
+  height: 7px;
+  /* background: url(http://www.cmbc.com.cn/upload/2016/06/grjs.jpg) no-repeat; */
+  margin-right: 6px;
+  margin-left: 6px;
+  margin-top: -9px;
+}
+.mobile_bank_tog dl .dd02 {
+  width: 14.53%;
+  float: right;
+  margin-top: 40px;
+}
+.mobile_bank_tog dl .dd02 a {
+  float: right;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+.mobile_bank_tog dl .dd02 p {
+  float: right;
+  text-align: center;
+  text-align: right;
+  width: 100%;
+  color: #0072bc;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "[ZHSRXT]";
+}
+.Online_bank,
+.zhixiao_bank {
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 auto;
+  padding-bottom: 45px;
+  background: #fff;
+}
+.Online_bank ul {
+  width: 100%;
+  overflow: hidden;
+  padding-left: 20px;
+}
+.Online_bank ul li {
+  float: left;
+  width: 31.2%;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  padding-bottom: 28px;
+  border-right: 1px solid #e5e5e5;
+  text-align: left;
+}
+.Online_bank ul li.fist {
+  padding-left: 0px;
+}
+.Online_bank ul .noborder {
+  border-right: 0;
+  padding-right: 0px;
+}
+.Online_bank ul li p {
+  font-size: 16px;
+  color: #0072bc;
+  height: 30px;
+  font-family: "兰亭黑简", "微软雅黑";
+  text-align: center;
+}
+.Online_bank ul li dl {
+  height: 207px;
+  margin: 0 auto;
+}
+.Online_bank ul li dt {
+  width: 240px;
+  height: 149px;
+  margin-bottom: 10px;
+}
+.Online_bank ul li dd {
+  width: 94%;
+}
+.Online_bank ul li dd a {
+  color: #585657;
+}
+.zhixiao_bank li {
+  width: 30.1%;
+}
+.zhixiao_bank ul {
+  width: 100%;
+}
+.zhixiao_bank li {
+  float: left;
+  width: 33.33%;
+  width: 33.3%;
+}
+.zhixiao_bank li dl dt {
+  margin-top: 4px;
+  font-size: 18px;
+  color: #0072bc;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 15px;
+  font-family: "兰亭黑简", "微软雅黑";
+}
+.zhixiao_bank li dl .dna {
+  color: #0072bc;
+}
+.zhixiao_bank li dl dd {
+  width: 100%;
+  height: 246px;
+  border-right: 1px solid #e5e5e5;
+}
+.zhixiao_bank li dl dd span {
+  cursor: pointer;
+  float: left;
+  width: 33.333%;
+  height: 82px;
+  margin-bottom: 39px;
+}
+.zhixiao_bank li dl dd span .a1 {
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 9px;
+  /* background: url(http://www.cmbc.com.cn/upload/images/dzyh/mobile_bankicon1.fw.png) no-repeat; */
+  background-position: 0 0;
+}
+.zhixiao_bank li dl dd span .a1:hover {
+  /* background: url(http://www.cmbc.com.cn/upload/images/dzyh/mobile_bankicon1.fw.png) no-repeat; */
+  background-position: 0 0;
+}
+.zhixiao_bank li dl dd span .a2 {
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 9px;
+  /* background: url(http://www.cmbc.com.cn/upload/images/images/zhixiao_bankicon1.fw.png) no-repeat; */
+  background-position: 0 -55px;
+}
+.zhixiao_bank li dl dd span .a2:hover {
+  /* background: url(http://www.cmbc.com.cn/upload/images/dzyh/mobile_bankicon1.fw.png) no-repeat; */
+  background-position: 0 -55px;
+}
+.zhixiao_bank li dl dd span .a3 {
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 9px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/zhixiao_bankicon1.fw.png) no-repeat; */
+  background-position: 0 -110px;
+}
+.zhixiao_bank li dl dd span .a3:hover {
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/zhixiao_bankicon2.fw.png) no-repeat; */
+  background-position: 0 -110px;
+}
+.zhixiao_bank li dl dd span .a4 {
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 9px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/zhixiao_bankicon1.fw.png) no-repeat; */
+  background-position: 0 -165px;
+}
+.zhixiao_bank li dl dd span .a4:hover {
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/zhixiao_bankicon2.fw.png) no-repeat; */
+  background-position: 0 -165px;
+}
+.zhixiao_bank li dl dd span .a5 {
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 9px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/zhixiao_bankicon1.fw.png) no-repeat; */
+  background-position: 0 -220px;
+}
+.zhixiao_bank li dl dd span .a5:hover {
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/zhixiao_bankicon2.fw.png) no-repeat; */
+  background-position: 0 -220px;
+}
+.zhixiao_bank li dl dd span .a6 {
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 9px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/zhixiao_bankicon1.fw.png) no-repeat; */
+  background-position: 0 -275px;
+}
+.zhixiao_bank li dl dd span .a6:hover {
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/zhixiao_bankicon2.fw.png) no-repeat; */
+  background-position: 0 -275px;
+}
+.zhixiao_bank li dl dd span p {
+  line-height: 18px;
+  color: #737373;
+  margin-left: 5px;
+}
+.zhixiao_bank li dl .noborder {
+  border-right: 0;
+}
+.zhixiao_bank li dl dd .zhixiao_bank_last1 {
+  width: 100%;
+  height: 66px;
+}
+.zhixiao_bank li dl dd .zhixiao_bank_last1 .left {
+  cursor: auto;
+  float: left;
+  width: 66px;
+  height: 66px;
+  margin: 0;
+  margin-right: 3.6818%;
+}
+.zhixiao_bank li dl dd .zhixiao_bank_last1 .right {
+  cursor: auto;
+  float: left;
+  width: 73.2954%;
+  height: 51px;
+  margin: 0;
+  padding-top: 15px;
+  line-height: 24px;
+  color: #595757;
+  font-size: 14px;
+  font-family: "兰亭黑简", "微软雅黑";
+}
+.zhixiao_bank li dl dd .zhixiao_bank_last2 div {
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  color: #0072bc;
+  font-family: "兰亭黑简", "微软雅黑";
+}
+.zhixiao_bank li dl dd .zhixiao_bank_last2 .p1 {
+  width: 78%;
+}
+.zhixiao_bank li dl dd .zhixiao_bank_last2 .p1 a {
+  line-height: 24px;
+  height: 24px;
+  color: #595757;
+  font-size: 12px;
+  font-family: "兰亭黑简", "微软雅黑";
+}
+.zhixiao_bank li dl dd .zhixiao_bank_last2 .p2 {
+  margin-top: 8px;
+  height: 24px;
+  line-height: 24px;
+}
+.zhixiao_bank li dl dd .zhixiao_bank_last2 .p2 a {
+  float: left;
+  font-size: 14px;
+  font-family: "兰亭黑简", "微软雅黑";
+  color: #595757;
+}
+.zhixiao_bank li dl dd .zhixiao_bank_last2 .p2 span {
+  margin-top: 10px;
+  float: left;
+  width: 5px;
+  height: 7px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/mobile_bank_togimgicon.gif) no-repeat; */
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.zhixiao_bank .zhixiao_banklast {
+  border-bottom: 1px solid #e5e5e5;
+  width: 97.5%;
+  height: 1px;
+  margin: 0 auto;
+  position: absolute;
+  left: 15px;
+  top: 329px;
+  display: none;
+}
+
+.E-bank_in-text {
+  overflow: hidden;
+  font-family: "宋体";
+  padding-top: 17px;
+}
+.E-bank_in-title {
+  font-size: 14px;
+  font-family: "兰亭黑简", "微软雅黑";
+  line-height: 25px;
+}
+.E-bank_in-title a {
+  color: #585657;
+}
+.E-bank_in-text div.left ul ol {
+  line-height: 29px;
+  padding: 0 0 0 8px;
+  margin: 0px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/point.gif) no-repeat left center; */
+  height: 29px;
+}
+.E-bank_in-text div.left ul ol a {
+  color: #585657;
+}
+.right {
+  float: right;
+}
+.E-bank_in-text div.right a img {
+  margin-top: 7px;
+}
+.E-bank_in-title-2 {
+  margin-top: 4px;
+  font-size: 18px;
+  color: #09569f;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 15px;
+  font-family: "兰亭黑简", "微软雅黑";
+}
+.zhixiao_bank {
+  overflow: hidden;
+}
+.mobile_bank_tog_down div.center dl dt img {
+  width: 100%;
+  height: 185px;
+}
+.E-bank-in-footer-1 {
+  overflow: hidden;
+}
+.E-bank-in-footer-1_left {
+  float: left;
+  width: 123px;
+  padding-bottom: 16px;
+  margin-right: 14px;
+}
+.E-bank-in-footer-1_right {
+  float: right;
+  width: 55%;
+}
+.E-bank-in-footer-1_bottom ul {
+  overflow: hidden;
+}
+.E-bank-in-footer-1_bottom ul ol {
+  float: left;
+  line-height: 37px;
+  padding: 0 0 0 8px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/point.gif) no-repeat left center; */
+  height: 37px;
+  width: 30%;
+}
+.E-bank-in-footer-1_bottom ul ol a,
+.E-bank-in-footer-1_right a {
+  color: #595757;
+}
+.E-bank_in-fenge {
+  border-right: 1px solid #e5e5e5;
+  padding-right: 4%;
+  padding-left: 8.5%;
+  height: 215px;
+}
+.E-bank_in-fenge_2 {
+  width: 80%;
+  margin: 0 auto;
+}
+.E-bank_in-fenge_2_icon a {
+  display: block;
+  width: 33.33%;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  padding-top: 55px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: "兰亭黑简", "微软雅黑";
+  color: #595757;
+}
+.E-bank_in-fenge_2_icon a.a1 {
+  /* background-image: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/e-bank-inter-icon-1_hover.gif); */
+  margin-bottom: 30px;
+}
+.E-bank_in-fenge_2_icon a.a2 {
+  /* background-image: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/e-bank-inter-icon-2_hover.gif); */
+  margin-bottom: 30px;
+}
+.E-bank_in-fenge_2_icon a.a3 {
+  /* background-image: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/e-bank-inter-icon-3_hover.gif); */
+  margin-bottom: 30px;
+}
+/* .E-bank_in-fenge_2_icon a.a4 {
+  background-image: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/e-bank-inter-icon-4_hover.gif);
+}
+.E-bank_in-fenge_2_icon a.a5 {
+  background-image: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/e-bank-inter-icon-5_hover.gif);
+}
+.E-bank_in-fenge_2_icon a.a6 {
+  background-image: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/e-bank-inter-icon-6_hover.gif);
+}
+.E-bank_in-fenge_2_icon a.a1:hover {
+  background-image: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/e-bank-inter-icon-1.gif);
+}
+.E-bank_in-fenge_2_icon a.a2:hover {
+  background-image: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/e-bank-inter-icon-2.gif);
+}
+.E-bank_in-fenge_2_icon a.a3:hover {
+  background-image: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/e-bank-inter-icon-3.gif);
+}
+.E-bank_in-fenge_2_icon a.a4:hover {
+  background-image: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/e-bank-inter-icon-4.gif);
+}
+.E-bank_in-fenge_2_icon a.a5:hover {
+  background-image: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/e-bank-inter-icon-5.gif);
+}
+.E-bank_in-fenge_2_icon a.a6:hover {
+  background-image: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/e-bank-inter-icon-6.gif);
+} */
+.E-bank_in-fenge_2_icon {
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+}
+.E-bank_in-title-3 {
+  padding-left: 10%;
+}
+.E-bank_in-footer-3 {
+  padding-left: 10%;
+  border-left: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+.E-bank_in-footer-3_left {
+  float: left;
+  width: 66px;
+  height: 66px;
+  padding-right: 19px;
+}
+.E-bank_in-footer-3_right {
+  float: left;
+  font-size: 14px;
+  font-family: "兰亭黑简", "微软雅黑";
+  color: #595757;
+  line-height: 24px;
+  padding-top: 18px;
+}
+.E-bank_in-footer-8 {
+  height: 149px;
+}
+.E-bank_in-title-4 {
+  margin-bottom: 0px;
+  padding-top: 18px;
+}
+.E-bank_in-footer-4 {
+  color: #595757;
+  font-size: 12px;
+  font-family: "兰亭黑简", "微软雅黑";
+}
+.E-bank_in-text div.left {
+  width: 114px;
+}
+.zhixiao_bank {
+  border-bottom: none;
+}
+.E_bank_hdp {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.E_bank_hdp_left {
+  width: 20px;
+  height: 60px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/left_right_e_bank_button.gif); */
+  cursor: pointer;
+  float: left;
+  position: absolute;
+  left: 0px;
+  top: 109px;
+}
+.E_bank_hdp_right {
+  width: 20px;
+  height: 60px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/left_right_e_bank_button.gif) right top; */
+  cursor: pointer;
+  float: right;
+  position: absolute;
+  right: 0px;
+  top: 109px;
+}
+.E_bank_hdp_title {
+  font-size: 16px;
+  font-family: "兰亭黑简", "微软雅黑";
+  text-align: center;
+}
+.E_bank_hdp_title a {
+  color: #09569f;
+}
+.Online_bank2 {
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 auto;
+  padding-bottom: 45px;
+  background: #ffff;
+}
+.E-bank_in-title-2 a,
+.Online_bank2 div.title a,
+.Online_bank div.title a,
+.mobile_bank div.title a,
+.Online_bank ul li p a {
+  color: #09569f;
+}
+
+.E_bank_hdp_main ul li {
+  float: left;
+  width: 33.33%;
+  width: 33%;
+}
+.E_bank_hdp_main ul li div.E_bank_hdp_main_div {
+  width: 85%;
+  position: relative;
+}
+.E_bank_hdp_main ul li div.left {
+  float: left;
+}
+.E_bank_hdp_main ul li div.center {
+  margin: 0 auto;
+}
+.E_bank_hdp_main ul li div.right {
+  float: right;
+}
+.E_bank_hdp_img a img {
+  width: 100%;
+}
+
+.E_bank_hdp_title {
+  line-height: 54px;
+}
+.E_bank_hdp_text {
+  position: absolute;
+  bottom: 0;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/images/E_bank_hdp_text_bg.png); */
+  height: 49px;
+  padding-top: 2px;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.E_bank_hdp_text a {
+  color: #fff;
+  font-size: 14px;
+  font-family: "兰亭黑简", "微软雅黑";
+  line-height: 24px;
+}
+.E_bank_hdp_main ul {
+  overflow: hidden;
+}
+.E_bank_hdp_main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*以下是为你推荐*/
+.grey_bg {
+  height: 130px;
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/grey_bg.gif) repeat-x; */
+  width: 1200px;
+  margin: 0px auto;
+  clear: both;
+  font-family: Microsoft YaHei;
+  background: #f5f5f5;
+}
+.grey_bg ul {
+  height: 75px;
+}
+.grey_bg ul,
+.grey_msTit {
+  width: 98.7%;
+  margin: 0 auto;
+}
+.grey_msTit {
+  height: 50px;
+  line-height: 50px;
+  color: #09569f;
+  font-size: 18px;
+  width: 95%;
+  margin: 0 auto;
+  font-weight: normal;
+}
+.grey_msBox {
+  float: left;
+  width: 31%;
+  padding-right: 2%;
+  margin-left: 2%;
+  height: 75px;
+}
+.grey_msBox span {
+  display: block;
+  float: left;
+  height: 75px;
+}
+.grey_msBox span.ms_mbImg {
+  width: 60px;
+}
+.grey_msBox span.ms_mbWord {
+  width: 60%;
+  padding-left: 40px;
+  font-family: SimSun;
+}
+.grey_msBox span.ms_mbWord h3 {
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.grey_msBox span.ms_mbWord h3 a {
+  color: #595757;
+}
+.grey_msBox span.ms_mbWord p {
+  line-height: 22px;
+  height: 45px;
+  overflow: hidden;
+}
+
+/*二级页面 今日民生、基金*/
+.bluepoint {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/point.gif)
+    no-repeat left center;
+  padding-left: 8px;
+} /*文字列表前面的蓝点*/
+.company_title,
+.company_title_left {
+  color: #09569f;
+  font-size: 18px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  line-height: 40px;
+  width: -webkit-fill-available;
+  height: 40px;
+  /* height: auto; */
+  clear: both;
+}
+.company_cont,
+.company_new,
+.company_newa {
+  width: 1200px;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/line_wide.gif)
+    no-repeat bottom center;
+  margin: 0 auto;
+  height: 252px;
+  padding-bottom: 50px;
+  /* background: #fff; */
+}
+.WordOne {
+  height: 120px;
+  padding-top: 10px;
+  float: left;
+}
+.WordOne span.rightword a,
+.BoxList li a,
+.WordOne ul.rightword li a,
+.rightword_touzi a {
+  color: #595959;
+  line-height: 22px;
+}
+.aticle_title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #09569f;
+}
+.BoxOne {
+  float: left;
+  height: 252px;
+  width: 29%;
+  /* height: auto; */
+  margin-left: 2%;
+  padding-right: 2%;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/ms_indexbg.jpg)
+    no-repeat right center;
+}
+.WordOne span {
+  display: block;
+}
+.WordOne span.leftimg {
+  width: 86px;
+  height: 86px;
+  float: left;
+}
+.WordOne span.rightword,
+.WordOne ul.rightword,
+.rightword_touzi {
+  padding-left: 5.8%;
+}
+.WordOne span.rightword {
+  width: 66%;
+  padding-left: 0px;
+  float: right;
+}
+.BoxList li {
+  height: 30px;
+  line-height: 30px;
+  font-family: arial\9;
+}
+.BoxList li.bluepoint a,
+.BoxList li.bluepoint span {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+}
+.WordOne ul.rightword {
+  width: 61%;
+  padding-top: 10px;
+  float: right;
+}
+.WordOne ul.rightword li {
+  width: 45%;
+
+  float: left;
+  margin-left: 8px;
+}
+.TelBox {
+  height: 37px;
+  margin-top: 10px;
+}
+.WordOne span.leftimg_touzi {
+  width: 86px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+}
+.rightword_touzi {
+  width: 60%;
+  float: left;
+}
+
+.fundtit a,
+.fundImg a {
+  color: #595959;
+}
+.fundem {
+  line-height: 22px;
+  display: block;
+}
+.fundtit {
+  line-height: 22px;
+}
+.fundtit a {
+  padding: 0 4px;
+}
+.fundImg {
+  display: block;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.fundImg a {
+  display: block;
+  line-height: 30px;
+}
+.fund_more {
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 20px;
+}
+.fund_more a {
+  color: #006699;
+}
+
+.company_cont,
+.height210 {
+  height: 210px;
+}
+.company_cont {
+  height: auto;
+  overflow: hidden;
+}
+.company_newa {
+  height: 204px;
+}
+.personal_contnone {
+  height: 174px;
+  width: 98.7%;
+  padding: 0;
+  margin: 0 auto;
+}
+.personal_cont_personal {
+  height: 224px;
+  width: 1050px;
+  padding: 0px;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/line_wide.gif)
+    no-repeat bottom center;
+  margin: 0 auto;
+}
+.personal_conthight {
+  height: 260px;
+}
+.personal_conthight,
+.height210 {
+  width: 98.7%;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/line_wide.gif)
+    no-repeat bottom center;
+  margin: 0 auto;
+  padding: 10px 0 0 0;
+}
+.personal_cont {
+  width: 98.7%;
+  margin: 0 auto;
+}
+.personal_cont_ul {
+  float: left;
+  width: 29%;
+  width: 28%;
+  height: 140px;
+  padding: 0px;
+  margin-left: 2%;
+  padding-right: 2%;
+  display: inline;
+  display: inline-flex;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/ms_indexbg.jpg)
+    no-repeat right center;
+}
+.personal_cont_ulnone {
+  float: left;
+  width: 30%;
+  width: 29%;
+  padding: 0px;
+  padding-right: 2%;
+  margin-left: 2%;
+  margin-left: 35px;
+  display: inline;
+  display: inline-flex;
+}
+.personal_cont_ulnonetoday {
+  float: left;
+  width: 29.4%;
+  height: 140px;
+  padding: 0px;
+  margin: 0px;
+  display: inline;
+}
+.personal_cont_ulnone_foot {
+  float: left;
+  width: 33%;
+  height: 110px;
+  margin-top: 10px;
+  padding: 0px;
+}
+.personal_cont_ulnonewide {
+  float: left;
+  width: 970px;
+  height: 180px;
+  padding: 0px;
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.aticle_imge {
+  height: 65px;
+  width: 105px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.aticle_man {
+  height: 65px;
+  width: 105px;
+  background: url(http://www.cmbc.com.cn/skin/cs/staticsimages/man.gif)
+    no-repeat left bottom;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.aticle_child {
+  height: 65px;
+  width: 105px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.aticle_childaboat {
+  list-style-type: none;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.aticle_cont {
+  height: 80px;
+  line-height: 22px;
+  width: 61%;
+  float: right;
+  position: absolute;
+  right: 0px;
+}
+.aticle_cont_font {
+  position: relative;
+  width: 150px;
+  top: -85px;
+  height: auto;
+  line-height: 22px;
+  left: 110px;
+  z-index: 1;
+  display: block;
+}
+.aticle_cont_font_today {
+  position: relative;
+  width: 170px;
+  top: -85px;
+  height: auto;
+  line-height: 22px;
+  left: 120px;
+  z-index: 1;
+  display: block;
+}
+.aticle_contman {
+  height: 100px;
+  line-height: 22px;
+  font-size: 12px;
+  float: right;
+  width: 68%;
+  position: absolute;
+  right: 0px;
+}
+.aticle_cont02 {
+  position: relative;
+  width: 150px;
+  top: 0px;
+  height: 95px;
+  line-height: 22px;
+  left: 100px;
+  z-index: 1;
+  display: block;
+  font-size: 12px;
+}
+.small_bankcont {
+  font-family: "宋体";
+  float: right;
+  width: 63%;
+  padding-bottom: 22px;
+  font-size: 12px;
+  height: 64px;
+  line-height: 22px;
+}
+.small_bankcont p a {
+  color: #595757;
+}
+.aticle_div {
+  list-style-type: none;
+  line-height: 30px;
+  width: 100%;
+}
+.ms_liststyle {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/point.gif)
+    no-repeat left 10px;
+  padding-left: 8px;
+}
+.ms_liststylecn {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/point.gif)
+    no-repeat left center;
+  padding-left: 8px;
+}
+.ms_liststyle13 {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/point.gif)
+    no-repeat left 13px;
+  padding-left: 8px;
+}
+
+.more {
+  text-align: right;
+  list-style-type: none;
+  margin-right: 55px;
+  margin-top: 5px;
+}
+.aticle_div_ul {
+  padding: 0px;
+  margin-left: 10px;
+}
+.personal_cont_ulnone li ul li {
+  width: 25%;
+  float: left;
+  margin: 0px;
+  *background: url(http://www.cmbc.com.cn/skin/cs/statics/images/point.gif)
+    no-repeat left center;
+  *padding-left: 8px;
+  box-sizing: border-box;
+}
+.personal_cont_ulnonetoday li ul li {
+  width: 100%;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/point.gif)
+    no-repeat left center;
+  padding-left: 8px;
+}
+.aticle_divwidth {
+  width: 30%;
+  float: left;
+  padding-left: 8px;
+  margin: 0px;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/point.gif)
+    no-repeat left 12px;
+}
+
+.notice_tit {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.notice_tit a {
+  display: block;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  margin-right: 40px;
+}
+.notice_tit a.notice_click {
+  color: #0075c2;
+  border-bottom: solid 1px #0075c2;
+}
+.notice {
+  padding: 5px 0;
+  margin-right: 3%;
+}
+.notice ul,
+.notice ul li {
+  width: 100%;
+}
+.notice ul li {
+  height: 30px;
+  line-height: 30px;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/diandian.gif)
+    no-repeat left center;
+  font-family: arial\9;
+}
+.notice ul li a,
+.notice ul li span {
+  display: block;
+}
+.notice ul li a {
+  padding-left: 10px;
+}
+
+.aticle_coutfoot {
+  float: left;
+  width: 33%;
+  list-style-type: none;
+  height: 100px;
+}
+.aticle_men {
+  float: left;
+  width: 33%;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/men.gif)
+    no-repeat left top;
+  list-style-type: none;
+  height: 100px;
+}
+.aticle_girl {
+  float: left;
+  width: 34%;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/girl.gif)
+    no-repeat left top;
+  list-style-type: none;
+  height: 100px;
+}
+.company_div_li ul li {
+  padding-left: 10px;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/point.gif)
+    no-repeat left center;
+}
+
+/*左侧js菜单1*/
+.counter_left {
+  float: left;
+  width: 24%;
+  min-height: 540px;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/linegery.gif)
+    no-repeat right 0px;
+  overflow: hidden;
+  padding-right: 21px;
+}
+.counter_left .counter_left {
+  width: 100%;
+  background: none;
+  padding-right: 0;
+}
+.bg_li {
+  border-bottom: 1px dotted #b6b6b6;
+  width: 96%;
+  list-style: none;
+  padding-left: 4%;
+  line-height: 35px;
+  cursor: pointer;
+  font-family: Arial;
+}
+.bg_li div ul li a {
+  color: #595757;
+  text-decoration: none;
+  padding-left: 20px;
+  font-weight: normal;
+}
+.bg_li div ul li:hover {
+  background: #f4f4f4;
+}
+.bg_li div ul li i {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/right_jiao.png)
+    no-repeat;
+  display: inline-block;
+  width: 6px;
+  height: 11px;
+  float: right;
+  margin: 12px 23px 0 0;
+}
+.bg_li i.right_jiao {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/right_jiao.png)
+    no-repeat;
+  display: inline-block;
+  width: 6px;
+  height: 11px;
+  float: right;
+  margin: 12px 8% 0 0;
+}
+.bg_li i.bot_jiao {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/jiao.png)
+    no-repeat;
+  display: inline-block;
+  width: 11px;
+  height: 6px;
+  float: right;
+  margin: 12px 8% 0 0;
+}
+.bg_li i.bot_jiao1 {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/jiao1.png)
+    no-repeat;
+  display: inline-block;
+  width: 6px;
+  height: 11px;
+  float: right;
+  margin: 12px 8% 0 0;
+}
+.bg_li div {
+  display: none;
+  margin-left: -10px;
+}
+.personal_banner ul li {
+  float: left;
+  width: 1050px;
+  height: 193px;
+}
+.personal_banner ul {
+  position: absolute;
+}
+.bg_lierji {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/li_bg.gif)
+    no-repeat;
+  width: 181px;
+  height: 35px;
+  list-style: none;
+  padding-left: 30px;
+  line-height: 35px;
+}
+.bg_lierjihover {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/li_bg.gif)
+    no-repeat;
+  width: 181px;
+  height: 35px;
+  list-style: none;
+  padding-left: 30px;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.js_menu_left_erji_hover {
+  /*background:url(http://www.cmbc.com.cn/skin/cs/statics/images/left_menu_title_hover.jpg) no-repeat;*/
+}
+.js_menu_left_erji_hover_p {
+  background: #d5bf8d;
+}
+.js_menu_nonav {
+  font-weight: bold;
+  background: #ededed;
+}
+.ms_li_js {
+  border-bottom: 1px dotted #b6b6b6;
+  width: 171px;
+  list-style: none;
+  padding-left: 10px;
+  line-height: 35px;
+  cursor: pointer;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/right_jiao.png)
+    no-repeat 156px 11px;
+}
+.ms_li_js a {
+  color: #595959;
+}
+.bg_li2 {
+  border-bottom: 1px dotted #b6b6b6;
+  width: 171px;
+  list-style: none;
+  padding-left: 10px;
+  line-height: 35px;
+  cursor: pointer;
+}
+.bg_li2 div ul li a {
+  color: #595757;
+  text-decoration: none;
+  padding-left: 20px;
+  font-weight: normal;
+}
+.bg_li2 div ul li:hover {
+  background: #ededed;
+}
+
+.bg_lihover {
+  font-weight: bold;
+  line-height: 35px;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/left_js_select_bg.gif)
+    repeat-x;
+}
+.bg_lihover_img {
+  font-weight: bold;
+  background: #ededed;
+}
+.bg_lihover_img em.ms_li_em {
+  display: inline-block;
+  float: right;
+  width: 6px;
+  height: 9px;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/mobile_bank_icon1.png)
+    no-repeat;
+  margin: 12px 20px 0 0;
+}
+.bg_lihover_p {
+  font-weight: bold;
+  list-style: none;
+  line-height: 35px;
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/left_js_select_bg_p.gif)
+    no-repeat;
+}
+.right_jiao1 {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/right_jiao.png)
+    no-repeat;
+  display: block;
+  width: 6px;
+  height: 11px;
+  float: right;
+  margin: 12px 8% 0 0;
+  margin: -22px 8% 0 0;
+  _margin: -22px 12px 0 0;
+}
+.right_jiao1_p {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/right_jiao2.png)
+    no-repeat;
+  display: block;
+  width: 6px;
+  height: 11px;
+  float: right;
+  margin: 12px 23px 0 0;
+  _margin: -22px 12px 0 0;
+}
+.right_jiao2 {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/mobile_bank_icon1.png)
+    no-repeat;
+  display: block;
+  width: 6px;
+  height: 9px;
+  float: right;
+  margin: 12px 8% 0 0;
+  margin: -22px 8% 0;
+  _margin: -22px 12px 0 0;
+}
+.right_jiao2_p {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/mobile_bank_icon2.png)
+    no-repeat;
+  display: block;
+  width: 6px;
+  height: 11px;
+  float: right;
+  margin: 12px 8% 0 0;
+  _margin: -22px 12px 0 0;
+}
+.right_private_p {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/mobile_bank_icon2.png)
+    no-repeat;
+  display: block;
+  width: 6px;
+  height: 11px;
+  float: right;
+  margin: 12px 23px 0 0;
+  margin: -22px 23px 0 0;
+}
+.bg_li2 {
+  border-bottom: 1px dotted #b6b6b6;
+  width: 171px;
+  list-style: none;
+  padding-left: 10px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.private_erji_left_bg_color2 ul li:hover {
+  background: #d5bf8d;
+}
+.bg_li2 div ul li i {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/right_jiao.png)
+    no-repeat;
+  display: inline-block;
+  width: 6px;
+  height: 11px;
+  float: right;
+  margin: 12px 23px 0 0;
+  margin: -22px 23px 0 0;
+}
+.bg_li2 div {
+  display: none;
+  margin-left: -10px;
+}
+.bg_li2 i.right_jiao_p {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/right_jiao2.png)
+    no-repeat;
+  display: inline-block;
+  width: 6px;
+  height: 11px;
+  float: right;
+  margin: 12px 23px 0 0;
+  margin: -22px 23px 0 0;
+}
+.bg_li2 i.bot_jiao_p {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/jiao_p.png)
+    no-repeat;
+  display: inline-block;
+  width: 11px;
+  height: 6px;
+  float: right;
+  margin: 12px 23px 0 0;
+}
+.privatet_bg .private_erji_left .bg_li2 i.bot_jiao_p {
+  margin: 12px 20px 0 0;
+}
+.privatet_bg .private_erji_left .right_jiao2_p {
+  margin: 12px 23px 0 0;
+}
+/*分页*/
+.couter_foot_num {
+  height: 25px;
+  width: 407px;
+  padding: 20px;
+  margin: auto;
+}
+.new_page_list li {
+  float: left;
+  padding: 0 8px;
+  line-height: 19px;
+  height: 19px;
+}
+.new_page_list li input {
+  vertical-align: middle;
+  height: 19px;
+
+  line-height: 19px;
+}
+.new_page_list li a {
+  color: #333333;
+}
+.couter_foot_num ul li img {
+  vertical-align: middle;
+}
+
+/*详情页头部标题分享推荐*/
+.PubBox {
+  height: 1137px;
+  border-bottom: dotted 1px #c7c7c7;
+}
+.tith1 {
+  font-size: 16px;
+  font-weight: bold;
+  width: 74%;
+  line-height: 24px;
+  overflow: hidden;
+}
+.div_margin p {
+  line-height: 24px;
+}
+
+/***同业金融**/
+.content_box {
+  width: 98.7%;
+  height: auto;
+  margin: 0 auto;
+}
+.common_bg {
+  /* background: url(http://www.cmbc.com.cn/skin/cs/statics/images/line_wide.gif) no-repeat bottom center; */
+  padding-bottom: 40px;
+  height: 250px;
+}
+.common_chunk,
+.common_chunk_none {
+  width: 29%;
+  margin-left: 2%;
+  padding-right: 2%;
+  float: left;
+}
+.common_chunk {
+  background: url(http://www.cmbc.com.cn/skin/cs/statics/images/ms_indexbg.jpg)
+    no-repeat right center;
+}
+.width263 {
+  /*width:92%;*/
+}
+.common_word_p {
+  height: 60px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.common_word_dl {
+  padding-top: 10px;
+}
+.common_word_dl dt {
+  width: 118px;
+  height: 62px;
+  border: solid 1px #cccccc;
+  margin-top: 5px;
+}
+.common_word_dl dd {
+  width: 44%;
+}
+.common_word_dl dd a {
+  display: block;
+  line-height: 24px;
+}
+.common_word_p a,
+.common_word_dl dd a {
+  color: #595959;
+}
+.common_img img {
+  border: solid 1px #cccccc;
+}
+
+.www51buycom {
+  width: 100%;
+  height: 340px;
+  position: relative;
+  overflow: hidden;
+}
+.on img {
+  top: -12px;
+}
+
+.lanzi1 {
+  color: #0b7bc2;
+}
+.zc_content h3{ height:66px;border-bottom:1px solid #c2d0df; line-height:66px; font-size:22px; color:#666; font-weight:bold;}
